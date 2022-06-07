@@ -1,0 +1,339 @@
+
+
+
+
+:root {
+	--clr-text: #3d3d3d;
+	--clr-primario: #cc7621 ;
+	--clr-primarioclaro: #F9DBA9;
+	--clr-secundario: #20610E;
+	--clr-secundarioclaro:  #CAF9A9;
+
+	--font-title: 'Dancing Script', cursive;
+	--font-seriff: 'Josefin Sans', sans-serif;;
+}
+
+
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+
+
+html {
+	box-sizing: border-box;
+	font-family: var(--font-seriff);
+	color: var(--clr-text);
+}
+
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+/*Tipografia*/
+
+h1,
+h2,
+h3,
+h4,
+p,
+.nosotros {
+	margin: 0;
+}
+
+
+h1 {
+	font-family: var(--font-title);
+	line-height: 0.8;
+	font-size: 3rem;
+	margin: 0 2em;
+	text-align: center;
+}
+
+.eslogan{
+	font-size: 3rem;
+	font-family: 'Caveat', cursive;
+}
+
+h2 {
+	font-family: var(--font-seriff);
+	font-size: 2.5rem;
+	line-height: 0.8;
+}
+
+h3 {
+	font-family: var(--font-seriff);
+	line-height: 0.8;
+	font-size: 0.9em;
+}
+
+p, .nosotros{
+	margin-bottom: 0.8em;
+}
+
+body{
+	text-align: center;
+}
+
+
+span{
+	color: var(--clr-secundario);
+}
+
+/*Navegador*/
+
+.nav__ul{
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	justify-content: space-evenly;
+}
+
+nav a{
+	display: inline-block;
+	padding: 0.5em;
+	color: var(--clr-primario);
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus{
+	color: var(--clr-secundario);
+	text-decoration: underline;
+}
+
+header{
+	padding: 1em .2em 2em;
+}
+
+
+
+/*estilos de la pagina*/
+
+
+
+
+
+.eslogan{
+	background-color: #333;
+	background-image: url("https://www.lavanguardia.com/files/image_449_220/uploads/2018/05/03/5e9983935a70b.jpeg");
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	color: white;
+	text-align: center;
+	padding: 15vh 0;
+	margin: 20px 0;
+}
+
+
+.intermedio{
+	margin: 1em 0 ;
+	font-family: 'Caveat', cursive ;
+}
+
+
+
+
+
+
+.contenedor__nosotros{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--clr-secundarioclaro);
+	padding: 0;
+}
+
+.nosotros__header{
+	background-image: url("https://peru21.pe/resizer/GCEADlCKUMDSTHR0NhCxL8H4VmM=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NS22NVH6DFDPRH3K7Z6VWR3HKI.jpeg");
+	padding: 3em 1em;
+	width: 100%
+}
+
+
+.section__title-small{
+	
+	padding: 0;
+	text-align: center;
+	font-family: 'Caveat', cursive;
+	color: white;
+
+
+}
+
+
+
+.nosotrosimg{
+	margin: 10px;
+	padding: 15px 4vh;
+	color: black;
+	
+
+}
+
+
+
+
+
+
+
+.productos{
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	max-width: 30rem;
+	margin: 0 auto;
+
+}
+
+.section__title{
+	color: black;
+	padding: .5em .1em 0;
+	text-align: center;
+	font-family: var(--font-seriff);
+	margin-top: 25px;
+
+}
+
+.producto{
+	padding: 0;
+	border-radius: 1em;
+	overflow: hidden;
+	margin: 20px 0;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+}
+
+.producto__title{
+	font-size: 30px;
+	padding: 20px 0 0;
+	text-align: center;
+	text-decoration: underline;
+	background-color: var(--clr-primarioclaro);
+}
+
+
+.descrip{
+	font-size: 1.2rem;
+	padding: 1em;
+	background-color: var(--clr-primarioclaro);
+	margin: 0;
+	text-align: left;
+}
+
+.botonproductos{
+	background-color: var(--clr-primarioclaro);
+	overflow: hidden;
+	border-radius: 1em;
+	width: 19vh;
+	height: 10vh;
+	display: flex;
+	margin: auto;
+	padding: auto;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+}
+
+.botonproductos__pro{
+	text-decoration: none;
+	padding: 1em;
+	font-size: 1.3em;
+	color: #333;
+	align-self: center;
+}
+
+
+.botonproductos__pro:hover{
+	color: var(--clr-secundario);
+	text-decoration: underline;
+}
+
+
+
+footer{
+	background-color: var(--clr-secundarioclaro);
+	padding: 1.5em .2em;
+	display: flex;
+	line-height: 1.8em;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.footer__nav{
+	list-style: none;
+}
+
+
+.footer__nav a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.footer__nav a:hover{
+	text-decoration: underline;
+}
+
+
+.imgfooter{
+	max-width: 100%;
+	height: 50px;
+	margin: 5px 0 ;
+	padding: 0 40px;
+}
+
+.contenedorcopy{
+	display: flex;
+}
+
+
+.footercopy{
+	font-size: .5em;
+	margin-top: 0px;
+}
+
+
+
+
+@media only screen and (min-width: 675px) {
+	section{
+		padding: 5em 1em;
+	}
+
+	.intermedio{
+		padding-bottom: 1.2em;
+		font-size: 4em;
+
+	}
+
+	.section__title-small{
+		height: 4em;
+
+	}
+
+	small{
+		font-size: 1.8em;
+		text-align: center;
+	}
+
+	.nosotros__header{
+		object-fit: none;
+	}
+
+
+	.nosotrosimg{
+		height: 8em;
+	}
+
+	p{
+		font-size: 1.2em;
+	}
+
+
+}
+
+
+
